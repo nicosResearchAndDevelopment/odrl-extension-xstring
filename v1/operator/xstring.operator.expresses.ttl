@@ -1,0 +1,20 @@
+@prefix odrl:    <http://www.w3.org/ns/odrl/2/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix time:    <https://www.w3.org/TR/owl-time/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix xstring: <https://github.com/nicosResearchAndDevelopment/odrl-extension-xstring/v1/> .
+
+xstring:expresses
+    a                owl:NamedIndividual ;
+    a                odrl:Operator ;
+    rdfs:label       "after"@en ;
+    rdfs:comment     """TODO: xstring:expresses rdfs:comment."""@en ;
+    a                skos:Concept ;
+    skos:definition  """TODO: xstring:expresses skos:definition"""@en ;
+    skos:note        """TODO: xstring:expresses skos:note."""@en ;
+    rdfs:isDefinedBy xstring: .
+
+###

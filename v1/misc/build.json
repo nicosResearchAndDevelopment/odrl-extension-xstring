@@ -1,0 +1,30 @@
+{
+  "output": "xstring.ttl",
+  "files": [
+    "###############################################################",
+    "##",
+    "###############################################################",
+    "xstring.context.ttl",
+    "xstring.ontology.ttl",
+    "## region Core",
+    "xstring.core.ttl",
+    "## endregion Core",
+    "## region Left Operand",
+    "$DROP :: leftOperand/xstring.leftOperand..ttl",
+    "## endregion Left Operand",
+    "## region Operator",
+    "operator/xstring.operator.expresses.ttl",
+    "## endregion Operator",
+    "$DROP :: ## region Right Operand",
+    "$DROP :: rightOperand/xstring.rightOperand..ttl",
+    "$DROP :: ## endregion Right Operand",
+    "$DROP :: ## region Action",
+    "$DROP :: ## endregion Action",
+    "## region Constant",
+    "xstring.constant.ttl",
+    "## endregion Constant",
+    "## region Profile",
+    "xstring.profile.ttl",
+    "## endregion Profile"
+  ]
+}
