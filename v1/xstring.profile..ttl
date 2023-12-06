@@ -1,14 +1,14 @@
     ## Definition of used or common namespaces
-@prefix dc:                <http://purl.org/dc/elements/1.1/> .
-@prefix dct:               <http://purl.org/dc/terms/> .
-@prefix owl:               <http://www.w3.org/2002/07/owl#> .
-@prefix odrl:              <http://www.w3.org/ns/odrl/2/> .
-@prefix profile:           <http://www.w3.org/ns/dx/prof/> .
-@prefix rdfs:              <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix role:              <http://www.w3.org/ns/dx/prof/role/> .
-@prefix xsd:               <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc:                  <http://purl.org/dc/elements/1.1/> .
+@prefix dct:                 <http://purl.org/dc/terms/> .
+@prefix owl:                 <http://www.w3.org/2002/07/owl#> .
+@prefix odrl:                <http://www.w3.org/ns/odrl/2/> .
+@prefix profile:             <http://www.w3.org/ns/dx/prof/> .
+@prefix rdfs:                <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix role:                <http://www.w3.org/ns/dx/prof/role/> .
+@prefix xsd:                 <http://www.w3.org/2001/XMLSchema#> .
 
-@prefix jla:               <https://www.nicos-ag.com/jlangkau> .
+@prefix jla:                 <https://www.nicos-ag.com/jlangkau> .
 
 @prefix xstring:             <https://github.com/nicosResearchAndDevelopment/odrl-extension-xstring/v1/> .
 
@@ -40,16 +40,16 @@ _:ODRL-Core-Profile-Version-2-2  # The ODRL Core Profile vocabulary terms
     dct:format          <https://www.iana.org/assignments/media-types/text/turtle> ;
     dct:conformsTo      <https://www.w3.org/TR/turtle/> .
 
-## Declare the artifacts of the Time Extension 'xstring' Profile
+## Declare the artifacts of the String Extension 'xstring' Profile
 
-xstring: # Properties of the Time Extension 'xstring' Profile v0.1
+xstring: # Properties of the Sting Extension 'xstring' Profile v0.1
     a                   profile:Profile ;
     profile:isProfileOf <http://www.w3.org/ns/odrl/2/core> ;
     profile:hasResource xstring:ProfileSpec-md ;
     profile:hasResource xstring:ProfileVocabulary-ttl .
 
 
-xstring:ProfileSpec-md # The Time Extension 'xstring' v0.1 specification MARKDOWN document
+xstring:ProfileSpec-md # The String Extension 'xstring' v0.1 specification MARKDOWN document
     a                   profile:ResourceDescriptor ;
     profile:hasRole     role:specification ;
     profile:hasArtifact <https://github.com/nicosResearchAndDevelopment/odrl-extension-xstring/v1/README.md> ;
@@ -58,23 +58,23 @@ xstring:ProfileSpec-md # The Time Extension 'xstring' v0.1 specification MARKDOW
     dct:publisher       "nicos Research & Development" ;
     dct:issued          "2023-03-10"^^xsd:date ;
     dct:format          <https://www.iana.org/assignments/media-types/text/markdown> ;
-    ## TODO: (find the right URL) dct:conformsTo      <https://www.w3.org/TR/html/>
+    ## TODO:     dct:conformsTo      <https://www.w3.org/TR/turtle/>
 .
 
 xstring:ProfileVocabulary-ttl    # The Usage Control Profile v0.1 Profile vocabulary terms using RDF Turtle syntax
     a                   profile:ResourceDescriptor ;
+    dct:title           "ODRL Time Extension 'xstring' Profile v1.0.0" ;
     profile:hasRole     role:vocabulary ;
     ## region profile:hasArtifact
     ## region operators
-    profile:hasArtifact <https://github.com/nicosResearchAndDevelopment/odrl-extension-xstring/v1/xstring.ttl>,
-                            ## region left operand order ALPHA
-                            ## endregion left operand
-                            ## region operators ORDER ALPHA
-                        <https://github.com/nicosResearchAndDevelopment/odrl-extension-xstring/v1/operators/xstring.operator.expresses.ttl>,
+    profile:hasArtifact <https://github.com/nicosResearchAndDevelopment/odrl-extension-xstring/v1/xstring.ttl> ;
+    ## region left operand order ALPHA
+    ## endregion left operand
+    ## region operators ORDER ALPHA
+    profile:hasArtifact <https://github.com/nicosResearchAndDevelopment/odrl-extension-xstring/v1/operators/xstring.operator.expresses.ttl> ;
     ## endregion operators
     ## REM: end of profile:hasArtifact
     ## endregion profile:hasArtifact
-    dct:title           "ODRL Time Extension 'xstring' Profile v1.0.0" ;
     owl:versionInfo     "1.0.0"^^xsd:string ;
     dct:issued          "2023-07-17"^^xsd:date ;
     dct:publisher       "nicos Research & Development" ;
