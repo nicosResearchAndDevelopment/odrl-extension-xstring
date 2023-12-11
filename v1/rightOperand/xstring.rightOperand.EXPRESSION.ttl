@@ -8,20 +8,20 @@
 
 @prefix xstring:    <https://github.com/nicosResearchAndDevelopment/odrl-extension-xstring/v1/> .
 
-xstring:URI
+xstring:UriExpression
     a                rdfs:Literal, odrl:RightOperand ;
     rdf:type         xsd:string ;
     rdf:value        """^(([^:/?#]+):)?(//([^/?#]*))?([^?#]*)(\\?([^#]*))?(#(.*))?""" ;
     rdfs:isDefinedBy xstring: .
 
-xstring:DID
+xstring:DidExpression
     a                rdfs:Literal, odrl:RightOperand ;
     rdf:type         xsd:string ;
     rdf:value        """^(?<did>did):(?<methodName>[a-z0-9]+):(?<methodSpecificId>[\\w\\.\\-:]*)(?<extra>[;?#/]*.*)$""" ;
     rdfs:isDefinedBy xstring: .
 
 <https://github.com/nicosResearchAndDevelopment/odrl-extension-xstring/v1/#constraintRightOperands>
-    skos:member xstring:URI ;
-    skos:member xstring:DID .
+    skos:member xstring:UriExpression ;
+    skos:member xstring:DidExpression .
 
 ###

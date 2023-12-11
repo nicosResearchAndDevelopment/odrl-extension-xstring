@@ -12,14 +12,16 @@ URI: <https://github.com/nicosResearchAndDevelopment/odrl-extension-xstirng/tree
 
 ## Table of Content
 
-- [Prologue](#prologue)
-- [Introduction](#introduction)
-- [Left Operand](#left-operand)
-- [Operator](#operator)
-- [Right Operand](#right-operand)
-- [TODO](./TODO.md)
+- [**Prologue**](#prologue)
+- [**Introduction**](#introduction)
+- [**Left Operand**](#left-operand)
+- [**Operator**](#operator)
+- [**Right Operand**](#right-operand)
+- [*TODO*](./TODO.md)
 
 *Table of Content "xstring, ODRL extension for String, Version 1"*.
+
+---
 
 ## Prologue
 
@@ -39,11 +41,24 @@ All `xstring` Left Operands:
 
 All `xstring` Operators:
 
+
+| Right Operand          | Comment | See Also                                          |
+|------------------------|---------|---------------------------------------------------|
+| **xstring:expresses**  |         | [ttl](./operator/xstring.operator.expresses.ttl)  |
+
+*Table: All `xstring` Operators*.
 ---
 
 ## Right Operand
 
 All `xstring` Right Operands:
+
+| Right Operand             | Comment            | See Also                                                    |
+|---------------------------|--------------------|-------------------------------------------------------------|
+| **xstring:DidExpression** | Regular Expression | [ttl](./rightOperand/xstring.rightOperand.EXPRESSION.ttl)   |
+| **xstring:UriExpression** | Regular Expression | [ttl](./rightOperand/xstring.rightOperand.EXPRESSION.ttl)   |
+
+*Table: All `xstring` Right Operands*.
 
 ---
 
@@ -51,5 +66,6 @@ All `xstring` Right Operands:
 
 - ["Date and time expressed according to ISO 8601", wiki, en](https://en.wikipedia.org/wiki/ISO_8601)
 - ["Date and Time on the Internet: Timestamps", RFC3339](https://datatracker.ietf.org/doc/html/rfc3339)
-- 
+-
+
 ---
